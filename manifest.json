@@ -1,0 +1,17 @@
+{
+  "name": "Rose Grove Board",
+  "version": "1",
+  "manifest_version": 2,
+  "description": "Rose Grove Board layout cosmetics",
+  "browser_action": {
+    "name": "Rose Grove Board",
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": [ "jquery.min.js", "background.js" ],
+      "matches": [ "https://github.com/*" ]
+    }
+  ]
+}
